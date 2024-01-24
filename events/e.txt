@@ -1,0 +1,7 @@
+the change in the state of an object is known as an event
+.mouse event
+.keyboard event
+.form event
+.print event & many more
+
+//
