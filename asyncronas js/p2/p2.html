@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imran Nazir Udoy</h1>
+    <button id="stop">Stop</button>
+    <button id="st">Start</button>
+    
+</body>
+<script>
+    let ans
+const saydate=function()
+{
+    console.log("udoy",Date.now())
+}
+
+let p=document.querySelector('#st').addEventListener('click',function()
+{
+  ans= setInterval(saydate,2000,"hi"); 
+})
+document.querySelector('#stop').addEventListener('click',function()
+{
+    clearInterval(ans);
+})
+</script>
+</html>

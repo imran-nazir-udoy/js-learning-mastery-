@@ -4,4 +4,56 @@ the change in the state of an object is known as an event
 .form event
 .print event & many more
 
-//
+type 
+
+timestamp
+
+preventdefault - e.preventdefault();
+
+target 
+
+toelement
+
+clientx 
+
+clienty
+
+screenx
+
+
+screeny
+
+
+altkey
+
+ctrlkey
+
+shiftkey
+
+keycode
+
+*******************************************************( EVENT PROPOGATION )**********************************************************************************
+event propogation - 
+
+addEventListener('click',function(e)
+{
+
+},//here defalut value is false -------(bubbling)
+    //but you can use true also ------- (capturing))
+true  ----------------------- false
+
+1.it goes up to bottom-----2.It goes bottom to top
+(parent to child )             (child to parent)
+
+example(
+    <div> 
+    <p>hello</p>
+    </div>
+)
+
+now here if we use true then click on the p firstly div will fire the event and then p (parent to child)
+but if we use false or defalut case it will let p to fire first and then the div (child to parent)
+
+*** FOR stop propogation you can use e.stopPropogation(); _-_-_-_
+
+_______________________________________________________________________________________________________________________________________________

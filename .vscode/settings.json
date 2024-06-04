@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "gitlens.keymap": "chorded",
+    "editor.comments.insertSpace": false,
+    "breadcrumbs.showNamespaces": true
+}
