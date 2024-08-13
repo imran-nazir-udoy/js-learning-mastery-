@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //solution of callback hell
+    /*
+
+   let promise=new Promise(function(resolve , reject)
+    {
+        console.log("i am a promise")
+    })
+    
+    */
+
+    function getdata(dataid) {
+      return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+          console.log("dataid", dataid);
+          resolve("success")
+     
+        }, 2000);
+      });
+    }
+    //first style of  calling
+    /*
+    getdata(1).then((res)=>
+    {
+        console.log(res," ")
+        getdata(2).then((res)=>
+        {
+            console.log(res," ")
+        })
+    })
+    */
+
+    //2nd one
+
+    getdata(1).then((res)=>
+    {
+        return getdata(2);
+    })
+    .then((res)=>
+    {
+        return getdata(3);
+    })
+    .then((res)=>
+    {
+
+        console.log(res)
+    })
+  </script>
+</html>

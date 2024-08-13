@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #183182;
+}
+
+.con{
+  background-color:#F5C900 ;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 40vh;
+  box-shadow:1px 1px 2px 2px #0a1743;
+}
+form
+{
+  margin: 2rem 0 1rem 0;
+ 
+}
+from , select, button, input{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+ 
+}
+form input{
+  border: 1px solid lightslategray;
+  font-size: 1rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  border-radius: 0.75rem;
+}
+.selection
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.selection-con img
+{
+max-width: 2rem;
+border-radius: 2rem;
+}
+.selection-con
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid lightslategray;
+  width: 6rem;
+  padding-left: 0.5rem;
+}
+.con i{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: rgb(210, 30, 171);
+}
+.selection-con select
+{
+  font-size:1rem;
+}
+.final
+{
+  margin: 2rem 0 2rem 0;
+}
+form button{
+  height: 2rem;
+  background-color:#626457 ;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+p,label
+{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+h2
+{
+  text-align: center;
+  font-weight: bolder;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <h2>Currency Converter</h2>
+
+      <form action="">
+        <div class="amount">
+          <label for="amount">Enter the amount :</label>
+          <input id="amount" type="text" placeholder="Enter amount"  value="100"/>
+        </div>
+
+        <div class="selection">
+          <div class="from">
+            <p>From</p>
+          
+            <div class="selection-con">
+              <img src="https://flagsapi.com/US/flat/64.png">
+              <select name="from" >
+               
+              </select>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-right-left"></i>
+
+          <div class="to">
+            <p>To</p>
+           
+            <div class="selection-con">
+              <img src="https://flagsapi.com/BD/flat/64.png">
+              <select name="to" >
+            
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="final">
+          1 USD == 100 TK
+          </div>
+          <button type="submit">Convert</button>
+      </form>
+
+<div class="tab">
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+    </div>
+
+    
+  </body>
+
+  <script src="./country.js"></script>
+  <script src="./curr.js"></script>
+  <script src="./app.js"></script>
+ 
+  
+</html>

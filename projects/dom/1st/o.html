@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        body
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(74, 187, 187);
+
+        }
+        .card
+        {
+            height: 450px;
+            width: 300px;
+            background-color: rgb(34, 108, 90);
+            border-radius: 20px;
+           padding: 20px;
+           
+        
+        }
+        .card>img{
+            height: 60%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+            box-shadow: 3px 2px 3px black;
+            margin: 0px 0px 10px 0px;
+          
+        }
+        .card>h2{
+         margin: 0px 0px 10px 0px;
+         text-align: center;
+      
+
+        }
+        .card>h5{
+            margin: -10px -10px 10px 0px;
+            text-align: center;
+           
+        }
+        .card>p{
+          
+            text-align: center;
+            color: rgb(18, 244, 15);
+            font-weight: bolder;
+           
+        }
+   .card .btncon
+        {
+          background-color: rgb(24, 45, 72);
+          width: 100%;
+          height: 15%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          border-radius: 50px;
+    
+        
+        }
+        
+        .btncon>.butt
+        {
+            border: none;
+            border-radius: 20px;
+            height: 60%;
+            width: 40%;
+            background-color: rgb(212, 159, 62);
+            font-weight: bolder;
+            cursor: pointer;
+           
+        }
+        .btncon>.but
+        {
+            border: none;
+            border-radius: 20px;
+            height: 60%;
+            width: 40%;
+            background-color: rgb(162, 66, 226);
+            font-weight: bolder;
+            cursor: pointer;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://images.pexels.com/photos/20536778/pexels-photo-20536778/free-photo-of-man-posing-in-jumper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <h2>MODEL PK</h2>
+
+        <h5>Stranger</h5>
+        <div class="btncon">
+            <button class="butt">Remove Friend</button>
+            <button class="but">Add Friend</button>
+        </div>
+    </div>
+
+</body>
+<script src="./o.js"></script>
+</html>

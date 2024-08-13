@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ function getdata(dataid)
+ {
+    return new Promise((resolve , reject)=>
+    {
+        setTimeout(()=>
+        {
+            console.log("data ",dataid);
+            resolve("success");
+        },2000)
+    });
+ }
+//for runnig this code you have to call the function again 
+ async function getall()
+ {
+    console.log("getting data 1......")
+    await getdata(1);
+    console.log("getting data 2......")
+    await getdata(2);
+    console.log("getting data 3......")
+    await getdata(3);
+
+ } 
+
+ getall();
+
+
+// to resolve the extra  this you can use iife : imidiately invocked function expression but it will work for one time
+(async function()
+{
+    console.log("getting data 1......")
+    await getdata(1);
+    console.log("getting data 2......")
+    await getdata(2);
+    console.log("getting data 3......")
+    await getdata(3);   
+})()
+    </script>
+</body>
+</html>
